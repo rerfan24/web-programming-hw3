@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+  height: 100%;
+  background: #fff;
+  font-family: "Quicksand";
+  font-size: 14px;
+}
+
+#wrap {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.login-head {
+  text-align: center;
+  color: #6d35f1;
+}
+.input-header h1 {
+  padding-bottom: 25px;
+  font-size: 3.25em;
+  font-weight: 100;
+}
+.input-content .inputbox {
+  overflow: hidden;
+  position: relative;
+  padding: 15px 120px 28px 120px;
+}
+.input-content .inputbox-title {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 200px;
+  height: 30px;
+  color: #666;
+  font-weight: bold;
+  line-height: 30px;
+}
+.input-content .inputbox-content {
+  position: relative;
+  width: 100%;
+}
+.input-content .inputbox-content input,
+.input-content .inputbox-content textarea {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  line-height: 30px;
+  font-size: 14px;
+  border: 0;
+  background: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.input-content .inputbox-content textarea {
+  height: 90px;
+  resize: vertical;
+}
+
+.input-content .inputbox-content input:focus ~ label,
+.input-content .inputbox-content input:valid ~ label,
+.input-content .inputbox-content textarea:focus ~ label,
+.input-content .inputbox-content textarea:valid ~ label {
+  color: #6d35f1;
+  transform: translateY(-20px);
+  font-size: 0.825em;
+  cursor: default;
+}
+.input-content .inputbox-content input:focus ~ .underline,
+.input-content .inputbox-content textarea:focus ~ .underline {
+  width: 100%;
+}
+.input-content .inputbox-content label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  line-height: 30px;
+  color: #ccc;
+  cursor: text;
+  transition: all 200ms ease-out;
+  z-index: 10;
+}
+.input-content .inputbox-content .underline {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #6d35f1;
+  transition: all 200ms ease-out;
+}
+.input-content .btns {
+  padding: 30px 0 0 2px;
+  align-items: center;
+  text-align: center;
+}
+.input-content .btns .btn {
+  display: inline-block;
+  margin-right: 2px;
+  padding: 10px 25px;
+  background: none;
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  color: #666;
+  font-size: 1.125em;
+  outline: none;
+  transition: all 100ms ease-out;
+  cursor: pointer;
+}
+.input-content .btns .btn:hover,
+.input-content .btns .btn:focus {
+  transform: translateY(-3px);
+}
+.input-content .btns .btn-confirm {
+  border: 1px solid #6d35f1;
+  background: #6d35f1;
+  color: #fff;
+}
+
+/*# sourceMappingURL=login.css.map */
