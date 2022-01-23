@@ -10,9 +10,10 @@ const Login = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        setUsername('')
-        setPassword('')
-        alert('yes!');
+        setUsername('');
+        setPassword('');
+        const loginContent = { username, password };
+        history.push('/');
     }
 
     const handleCancel = (e) => {

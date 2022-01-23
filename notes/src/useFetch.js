@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
+import Login from './Login';
 
 const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
+  const [login, setLogin] = useState(null)
 
   useEffect(() => {
     const abortCont = new AbortController();
@@ -30,7 +32,7 @@ const useFetch = (url) => {
           setError(err.message);
         }
       })
-    }, 1000);
+    }, 1);
 
     // abort the fetch
     return () => abortCont.abort();
